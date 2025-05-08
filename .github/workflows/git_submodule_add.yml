@@ -22,9 +22,64 @@ jobs:
 
       - name: Add submodules
         run: |
-          mkdir moodle
+          #mkdir moodle
           cd moodle
-          git submodule add -b MOODLE_500_STABLE https://github.com/danmarsden/moodle-mod_attendance.git mod/attendance
+          #git submodule add -b MOODLE_500_STABLE https://github.com/danmarsden/moodle-mod_attendance.git mod/attendance
+          git submodule add -b master https://github.com/ndunand/moodle-mod_choicegroup.git mod/choicegroup
+          git submodule add -b main https://github.com/frankkoch/moodle-mod_studentquiz.git mod/studentquiz
+          git submodule add -b master https://github.com/xow/moodle-mod_quizgame.git mod/quizgame
+          git submodule add -b master https://github.com/jcrodriguez-dis/moodle-mod_vpl.git mod/vpl
+          git submodule add -b master https://github.com/davosmith/moodle-checklist.git mod/checklist
+          git submodule add -b master https://github.com/projectestac/moodle-mod_geogebra.git mod/geogebra
+          git submodule add -b MOODLE_405_STABLE https://github.com/academic-moodle-cooperation/moodle-mod_publication.git mod/publication
+          git submodule add -b MOODLE_404_STABLE https://github.com/markn86/moodle-mod_customcert.git mod/customcert
+          git submodule add -b master https://github.com/bostelm/moodle-mod_scheduler.git mod/scheduler
+          git submodule add -b MOODLE_500_STABLE https://github.com/moodleworkplace/moodle-mod_coursecertificate.git mod/coursecertificate
+          git submodule add -b MOODLE_405_STABLE https://github.com/mudrd8mz/moodle-mod_subcourse.git mod/subcourse
+          git submodule add -b master https://github.com/udima-university/moodle-mod_jitsi.git mod/jitsi
+          git submodule add -b main https://github.com/srobotta/moodle-tiny_cloze.git lib/editor/tiny/plugins/cloze
+          git submodule add -b main https://github.com/bfh/moodle-tiny_fontcolor.git lib/editor/tiny/plugins/fontcolor
+          git submodule add -b main https://github.com/dthies/moodle-tiny_preview.git lib/editor/tiny/plugins/preview
+          git submodule add -b master https://github.com/FMCorz/moodle-block_xp.git blocks/xp
+          git submodule add -b master https://github.com/deraadt/moodle-block_completion_progress.git blocks/completion_progress
+          git submodule add -b MOODLE_404_STABLE https://github.com/catalyst/moodle-block_dedication.git blocks/dedication
+          git submodule add -b master https://github.com/donhinkelman/moodle-block_sharing_cart.git blocks/sharing_cart
+          git submodule add -b MOODLE_405_STABLE https://github.com/remotelearner/moodle-block_grade_me.git blocks/grade_me
+          git submodule add -b MOODLE_401_STABLE https://github.com/catalyst/moodle-report_coursesize.git report/coursesize
+          git submodule add -b master https://github.com/mikasmart/moodle-report_benchmark.git report/benchmark
+          git submodule add -b MOODLE_404_STABLE https://github.com/catalyst/moodle-report_allbackups.git report/allbackups
+          git submodule add -b main https://github.com/moodleou/moodle-report_customsql.git report/customsql
+          git submodule add -b MOODLE_500_STABLE https://github.com/ewallah/moodle-availability_relativedate.git availability/condition/relativedate
+          git submodule add -b main https://github.com/bdecentgmbh/moodle-availability_sectioncompleted.git availability/condition/sectioncompleted
+          git submodule add -b main https://github.com/MFreakNL/moodle-availability_ipaddress.git availability/condition/ipaddress
+          git submodule add -b main https://github.com/moodleou/moodle-qtype_oumultiresponse.git question/type/oumultiresponse
+          git submodule add -b master https://gricad-gitlab.univ-grenoble-alpes.fr/moodle-plugins/moodle-qtype_vplquestion.git question/type/vplquestion
+          git submodule add -b main https://github.com/moodleou/moodle-qtype_combined.git question/type/combined
+          git submodule add -b master https://github.com/gbateson/moodle-qtype_essayautograde.git question/type/essayautograde
+          #git submodule add -b master https://github.com/trampgeek/moodle-qbehaviour_adaptive_adapted_for_coderunner.git question/behaviour/adaptive_adapted_for_coderunner
+          #git submodule add -b master https://github.com/trampgeek/moodle-qtype_coderunner.git question/type/coderunner
+          git submodule add -b main https://github.com/moodleou/moodle-qtype_pmatch.git question/type/pmatch
+          git submodule add -b main https://github.com/moodleou/moodle-qtype_varnumericset.git question/type/varnumericset
+          git submodule add -b main https://github.com/moodleou/moodle-qtype_varnumeric.git question/type/varnumeric
+          git submodule add -b main https://github.com/moodleou/moodle-qtype_varnumunit.git question/type/varnumunit
+          git submodule add -b main https://github.com/moodleou/moodle-editor_ousupsub.git lib/editor/ousupsub
+          git submodule add -b MOODLE_500_STABLE https://github.com/moodleworkplace/moodle-tool_certificate.git admin/tool/certificate
+          git submodule add -b master https://github.com/Syxton/moodle-tool_coursearchiver.git admin/tool/coursearchiver
+          git submodule add -b MOODLE_404_STABLE https://github.com/catalyst/moodle-tool_trigger.git admin/tool/trigger
+          git submodule add -b MOODLE_404_STABLE https://github.com/catalyst/moodle-tool_dynamic_cohorts.git admin/tool/dynamic_cohorts
+          git submodule add -b MOODLE_405_STABLE https://github.com/moodle-an-hochschulen/moodle-tool_redis.git admin/tool/redis
+          git submodule add -b MOODLE_500_STABLE https://github.com/DigiDago/moodle-format_softcourse.git course/format/softcourse
+          git submodule add -b moodle45 https://bitbucket.org/dw8/moodle-format_tiles.git course/format/tiles
+          git submodule add -b FORMAT_ETASK_24_STABLE https://gitlab.com/drlikm/format_etask.git course/format/etask          
+          git submodule add -b main https://github.com/trampgeek/moodle-filter_ace_inline.git filter/ace_inline
+          git submodule add -b main https://github.com/moodlehq/moodle-mod_survey.git mod/survey
+          git submodule add -b MOODLE_500_STABLE https://github.com/moodleworkplace/moodle-block_rbreport.git blocks/rbreport
+          # STACK question type
+          git submodule add -b master https://github.com/maths/moodle-qbehaviour_dfexplicitvaildate.git question/behaviour/dfexplicitvaildate
+          git submodule add -b master https://github.com/maths/moodle-qbehaviour_dfcbmexplicitvaildate.git question/behaviour/dfcbmexplicitvaildate
+          git submodule add -b master https://github.com/maths/moodle-qbehaviour_adaptivemultipart.git question/behaviour/adaptivemultipart
+          git submodule add -b master https://github.com/maths/moodle-qtype_stack.git question/type/stack
+
 
       - name: Commit and push changes
         run: |
